@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"></FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/radio"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="0dp">
+        <RadioButton
+            android:gravity="center"
+            android:checked="true"
+            android:text="首页"
+            android:button="@null"
+            android:drawableTop="@drawable/item"
+            android:id="@+id/rb1"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <RadioButton
+            android:gravity="center"
+            android:button="@null"
+            android:text="你好"
+            android:drawableTop="@drawable/item"
+            android:id="@+id/rb2"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <RadioButton
+            android:drawableTop="@drawable/item"
+            android:gravity="center"
+            android:text="联系人"
+            android:button="@null"
+            android:id="@+id/rb3"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </RadioGroup>
+</LinearLayout>
